@@ -529,19 +529,19 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">Cesar Hernandez</span><br>
 <span id="revnumber">version 1.0-SNAPSHOT,</span>
-<span id="revdate">2019-04-08 16:36:37 UTC</span>
+<span id="revdate">2019-04-08 17:00:38 UTC</span>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Tabla de Contenidos</div>
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_introducción">1. Introducción</a></li>
-<li><a href="#_prerequisitos">2. Prerequisitos</a></li>
-<li><a href="#_crear_la_estructura_base_del_proyecto">3. Crear la estructura base del proyecto</a>
+<li><a href="#_introduction">1. Introduction</a></li>
+<li><a href="#_prerequisites">2. Prerequisites</a></li>
+<li><a href="#_creating_base_project_structure">3. Creating Base Project Structure</a>
 <ul class="sectlevel2">
-<li><a href="#_crear_un_nuevop_proyecto_con_maven">3.1. Crear un nuevop proyecto con Maven</a></li>
-<li><a href="#_agregar_asciidoctor_al_proyecto">3.2. Agregar Asciidoctor al proyecto</a></li>
-<li><a href="#_creación_de_tu_primer_documento_asciidoc">3.3. Creación de tu primer documento AsciiDoc</a></li>
-<li><a href="#_generación_de_tu_primer_documento_en_formatos_html_y_pdf">3.4. Generación de tu primer documento en formatos HTML y PDF</a></li>
+<li><a href="#_create_a_maven_project">3.1. Create a Maven project</a></li>
+<li><a href="#_add_asciidoctor_to_the_project">3.2. Add Asciidoctor to the project</a></li>
+<li><a href="#_create_your_first_asciidoc_file">3.3. Create your first AsciiDoc file</a></li>
+<li><a href="#_generate_your_first_html_and_pdf_files">3.4. Generate your first HTML and PDF files</a></li>
 </ul>
 </li>
 </ul>
@@ -549,15 +549,15 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_introducción"><a class="anchor" href="#_introducción"></a>1. Introducción</h2>
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Este tutorial muestra cómo iniciar un proyecto Java Maven desde cero y construyó toda la estructura necesaria para tener capacidades Asciidoctor junto con la revisión ortográfica de diferentes idiomas como parte de las pruebas del proyecto.</p>
+<p>This tutorial shows how to start a Java Maven project from scratch and built all the necessary structure to have Asciidoctor capabilities along with spell checking for different languages as part of the project tests.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_prerequisitos"><a class="anchor" href="#_prerequisitos"></a>2. Prerequisitos</h2>
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>2. Prerequisites</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -572,12 +572,12 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_crear_la_estructura_base_del_proyecto"><a class="anchor" href="#_crear_la_estructura_base_del_proyecto"></a>3. Crear la estructura base del proyecto</h2>
+<h2 id="_creating_base_project_structure"><a class="anchor" href="#_creating_base_project_structure"></a>3. Creating Base Project Structure</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_crear_un_nuevop_proyecto_con_maven"><a class="anchor" href="#_crear_un_nuevop_proyecto_con_maven"></a>3.1. Crear un nuevop proyecto con Maven</h3>
+<h3 id="_create_a_maven_project"><a class="anchor" href="#_create_a_maven_project"></a>3.1. Create a Maven project</h3>
 <div class="paragraph">
-<p>En una terminal ejecutar el siguiente comando:</p>
+<p>On a terminal execute the following command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -585,7 +585,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="paragraph">
-<p>En una termainl <code>cd</code> en el directorio generado en el paso anterior:</p>
+<p>On a terminal <code>cd</code> into the generated folder:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -593,7 +593,7 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="paragraph">
-<p>La estructura de diretorios generados debe ser igual a esta:</p>
+<p>The generated folder structure should look like this:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -614,18 +614,18 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="paragraph">
-<p>El archivo <code>pom.xml</code> contiene la información básica del proyecto recien creado.</p>
+<p>The <code>pom.xml</code> file contains at this point the basic project structure.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_agregar_asciidoctor_al_proyecto"><a class="anchor" href="#_agregar_asciidoctor_al_proyecto"></a>3.2. Agregar Asciidoctor al proyecto</h3>
+<h3 id="_add_asciidoctor_to_the_project"><a class="anchor" href="#_add_asciidoctor_to_the_project"></a>3.2. Add Asciidoctor to the project</h3>
 <div class="paragraph">
-<p>En un editor de texto, abrir el archivo <code>pom.xml</code> y realizar las siguiente modificaciones:</p>
+<p>On a text editor, open the <code>pom.xml</code> file and add the following sections:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Actualizar la sección <code>&lt;properties&gt;</code> con el siguiente contenido:</p>
+<p>Update the <code>&lt;properties&gt;</code> section with the following content:</p>
 </li>
 </ul>
 </div>
@@ -645,7 +645,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="ulist">
 <ul>
 <li>
-<p>En la sección <code>&lt;build&gt;</code>, agregar el siguiente contenido despues de la etiqueta: <code>&lt;/pluginManagement&gt;</code></p>
+<p>In the <code>&lt;build&gt;</code> section, add the following content after the <code>&lt;/pluginManagement&gt;</code> tag:</p>
 </li>
 </ul>
 </div>
@@ -723,37 +723,37 @@ table.CodeRay td.code>pre{padding:0}
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Referencia al plugin <code>asciidoctor-maven-plugin</code>.</td>
+<td>Reference to <code>asciidoctor-maven-plugin</code>.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Dependencias utilizadas por el plugin <code>asciidoctor-maven-plugin</code>.</td>
+<td>Dependencies used by the <code>asciidoctor-maven-plugin</code>.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Provee PDF export al proyecto.</td>
+<td>Provides PDF export capabilities to the project.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Configuración para reportes en formato HTML.</td>
+<td>Configuration for HTML export.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>Configuración para reportes en formato PDF.</td>
+<td>Configuration for PDF export.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>Configuración gobal para ambos executions.</td>
+<td>Global configuration for both executions.</td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_creación_de_tu_primer_documento_asciidoc"><a class="anchor" href="#_creación_de_tu_primer_documento_asciidoc"></a>3.3. Creación de tu primer documento AsciiDoc</h3>
+<h3 id="_create_your_first_asciidoc_file"><a class="anchor" href="#_create_your_first_asciidoc_file"></a>3.3. Create your first AsciiDoc file</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Crea el directorio por defecto de donde almacenaras tus archivos AsciiDoc (.adoc):</p>
+<p>Create the default AsciiDoc folder:</p>
 </li>
 </ul>
 </div>
@@ -765,7 +765,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="ulist">
 <ul>
 <li>
-<p>Dentro del directorio <code>src/main/asciidoc</code> crea un archivo con nombre <code>index_en.adoc</code> y agrega el siguiente contenido:</p>
+<p>Inside <code>src/main/asciidoc</code> folder create the file <code>index_en.adoc</code> with the following content:</p>
 </li>
 </ul>
 </div>
@@ -779,16 +779,14 @@ table.CodeRay td.code>pre{padding:0}
 5
 6
 7
-8
 </pre></td>
   <td class="code"><pre>   = Tutorial <i class="conum" data-value="1"></i><b>(1)</b>
    :nofooter: <i class="conum" data-value="2"></i><b>(2)</b>
-   :toc-title: Tabla de Contenidos <i class="conum" data-value="3"></i><b>(3)</b>
-   Autor     <i class="conum" data-value="4"></i><b>(4)</b>
-   {project-version}, {revdate} <i class="conum" data-value="5"></i><b>(5)</b>
+   Author     <i class="conum" data-value="3"></i><b>(3)</b>
+   {project-version}, {revdate} <i class="conum" data-value="4"></i><b>(4)</b>
 
-   == Capítulo 1 <i class="conum" data-value="6"></i><b>(6)</b>
-   Este es mi primer capítulo.</pre></td>
+   == Chapter 1 <i class="conum" data-value="5"></i><b>(5)</b>
+   This is my firt chapter.</pre></td>
 </tr></table></code></pre>
 </div>
 </div>
@@ -796,49 +794,33 @@ table.CodeRay td.code>pre{padding:0}
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Define el encabezado y nombre principal del documento.</td>
+<td>Set the document main Header.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>Remueve del documento el pie de página que se genera por defecto.</td>
+<td>Removes from the document the auto generated header.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Sobre escribe el valor por defecto (Table content) del título de la tabla de contenidos.</td>
+<td>Author name.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Nombre del autor del documento.</td>
+<td>Maps the project version and revision date from the <code>pom.xml</code> file.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>Mapeo de la versión y fecha de revisión del documento obtenido a partir del archivo <code>pom.xml</code>.</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="6"></i><b>6</b></td>
-<td>Indica el primer sub encabezado del documento.</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-Debes respetar que antes del header principal no haya texto, esto ayuda a que durante el proceso de renderización los parámtetros del documento (líneas 2 a la 5) sean efectivos.
-</td>
+<td>Set the first document sub header.</td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_generación_de_tu_primer_documento_en_formatos_html_y_pdf"><a class="anchor" href="#_generación_de_tu_primer_documento_en_formatos_html_y_pdf"></a>3.4. Generación de tu primer documento en formatos HTML y PDF</h3>
+<h3 id="_generate_your_first_html_and_pdf_files"><a class="anchor" href="#_generate_your_first_html_and_pdf_files"></a>3.4. Generate your first HTML and PDF files</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>En la terminal ejecuta el siguiente comando:</p>
+<p>On a terminal execute the following command:</p>
 </li>
 </ul>
 </div>
@@ -850,7 +832,7 @@ Debes respetar que antes del header principal no haya texto, esto ayuda a que du
 <div class="ulist">
 <ul>
 <li>
-<p>Los archivos para cada formato se generan en el folder: <code>target/generated-docs/</code></p>
+<p>The following files will be generated under the folder <code>target/generated-docs/</code></p>
 <div class="ulist">
 <ul>
 <li>
@@ -865,11 +847,11 @@ Debes respetar que antes del header principal no haya texto, esto ayuda a que du
 </ul>
 </div>
 <div class="paragraph">
-<p>La version html generada es similiar a la siguiente imagen:</p>
+<p>The generated html version should look similar to:</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/es/image_1.jpg" alt="image" width="660" height="450">
+<img src="images/en/image_1.jpg" alt="image" width="660" height="450">
 </div>
 </div>
 </div>
