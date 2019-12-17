@@ -12,6 +12,13 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
+  <scm>
+    <connection>scm:git:https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</connection>
+    <developerConnection>scm:git:https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</developerConnection>
+    <url>https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -147,6 +154,27 @@
             <icons>font</icons>
           </attributes>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.ragedunicorn.tools.maven</groupId>
+        <artifactId>github-release-maven-plugin</artifactId>
+        <version>1.0.1</version>
+        <executions>
+          <execution>
+            <id>default-cli</id>
+            <configuration>
+              <owner>cesarHernandezGt</owner>
+              <repository>book-demo-asciidoctor</repository>
+              <server>github-oauth</server>
+              <tagName>${project.version}</tagName>
+              <assets>
+                <asset>target/generated-docs/tutorial_en.pdf</asset>
+                <asset>target/generated-docs/tutorial_es.pdf</asset>
+              </assets>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
 
