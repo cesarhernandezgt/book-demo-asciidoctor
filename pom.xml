@@ -5,7 +5,7 @@
 
   <groupId>asciidoctor.doc.demo</groupId>
   <artifactId>book-demo</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>book-demo</name>
   <!-- FIXME change it to the project's website -->
@@ -15,7 +15,7 @@
     <connection>scm:git:https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</connection>
     <developerConnection>scm:git:https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</developerConnection>
     <url>https://github.com/cesarhernandezgt/book-demo-asciidoctor.git</url>
-    <tag>1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
